@@ -137,6 +137,7 @@ exports.htmlPlugin = function() {
           // filename: 'static/[filename]'+ filename + '.html',
           // 页面模板需要加对应的js脚本，如果不加这行则每个页面都会引入所有的js脚本
           chunks: [filename],
+          excludeChunks: ['mock'],
           inject: true
       }
       if (process.env.NODE_ENV === 'production') {

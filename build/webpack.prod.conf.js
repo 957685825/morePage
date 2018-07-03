@@ -28,7 +28,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     path: config.build.assetsRoot,
     // filename: utils.assetsPath('[name]/js/[name].[chunkhash].js'),
     // chunkFilename: utils.assetsPath('[name]/js/[id].[chunkhash].js')
-    filename: utils.assetsPath('[name]/js/[name].js'),
+    filename: utils.assetsPath('[name]') === 'mock' ? '': utils.assetsPath('[name]/js/[name].js'),
     chunkFilename: utils.assetsPath('index.js')
   },
   plugins: [
