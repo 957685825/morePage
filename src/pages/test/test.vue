@@ -1,0 +1,29 @@
+<template>
+  <div id="test">
+    {{datas}}
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'test',
+  data () {
+    return {
+      datas: '静态页面资源'
+    }
+  },
+  created () {
+  }
+}
+</script>
+
+<style>
+#test {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
